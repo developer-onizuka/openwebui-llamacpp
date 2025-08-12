@@ -8,7 +8,7 @@ llama.cpp is specifically engineered to run on the CPU alone, without needing a 
 | | **llama.cpp** | **Ollama** | **vLLM** |
 | :--- | :--- | :--- | :--- |
 | **Primary Use Case** | Local inference on a wide range of hardware (especially CPU-centric) | Simplified local deployment and sharing of models | High-throughput, low-latency serving of LLMs (GPU-centric) |
-| **Hardware Support** | **Excellent**. Optimized for CPU, Apple Silicon (M1/M2/M3), and can utilize GPUs. | **Good**. Primarily supports CPU/GPU (NVIDIA, AMD, Apple Silicon). Simplifies the setup process. | **Excellent but limited**. Highly optimized for NVIDIA GPUs. Emerging support for AMD and other GPUs, but less mature. |
+| **Hardware Support** | **Excellent**. Optimized for CPU, Apple Silicon (M1/M2/M3/M4), and can utilize GPUs. | **Good**. Primarily supports CPU/GPU (NVIDIA, AMD, Apple Silicon). Simplifies the setup process. | **Excellent but limited**. Highly optimized for NVIDIA GPUs. Emerging support for AMD and other GPUs, but less mature. |
 | **Model Format** | **GGUF** (GPT-Generated Unified Format) | **Custom format** for local serving. Pulls pre-packaged models from a registry. | Standard Hugging Face model formats (e.g., PyTorch, SafeTensors) |
 | **Ease of Use** | **Requires compilation, but is straightforward**. Simple command-line execution. | **Easiest**. A single executable to download and run. Offers a Docker-like experience. | **Moderate**. Requires a Python environment setup, dependencies, and some configuration. |
 | **Performance** | **Good on CPU, excellent on Apple Silicon**. Performance is highly dependent on hardware but is heavily optimized for efficiency. | **Good**. Offers solid performance for local use. | **Excellent**. Designed for maximum throughput and efficiency on GPUs, especially for multiple concurrent requests. |
@@ -19,7 +19,7 @@ llama.cpp is specifically engineered to run on the CPU alone, without needing a 
 | | **llama.cpp** | **Ollama** | **vLLM** |
 | :--- | :--- | :--- | :--- |
 | **主な用途** | 幅広いハードウェアでのローカル推論（特にCPU中心） | モデルのローカル展開と共有の簡素化 | 高スループット・低遅延のLLMサービス提供（GPU中心） |
-| **ハードウェアサポート** | **優れている**。CPU、Apple Silicon（M1/M2/M3）向けに最適化されており、GPUも利用可能。 | **良い**。主にCPU/GPU（NVIDIA, AMD, Apple Silicon）をサポート。セットアップが簡単。 | **優れているが限定的**。NVIDIA GPU向けに高度に最適化。他のGPUサポートも登場しているが、まだ成熟度は低い。 |
+| **ハードウェアサポート** | **優れている**。CPU、Apple Silicon（M1/M2/M3/M4）向けに最適化されており、GPUも利用可能。 | **良い**。主にCPU/GPU（NVIDIA, AMD, Apple Silicon）をサポート。セットアップが簡単。 | **優れているが限定的**。NVIDIA GPU向けに高度に最適化。他のGPUサポートも登場しているが、まだ成熟度は低い。 |
 | **モデル形式** | **GGUF** (GPT-Generated Unified Format) | ローカルサーバー用の**独自のカスタム形式**。レジストリからプリパッケージされたモデルをダウンロードする。 | 標準的なHugging Faceモデル形式（例：PyTorch, SafeTensors） |
 | **使いやすさ** | **コンパイルが必要だが、簡単**。シンプルなコマンドライン実行。 | **最も簡単**。ダウンロードして実行する単一の実行可能ファイル。Dockerのような体験。 | **中程度**。Python環境、依存関係、いくつかの設定が必要。 |
 | **パフォーマンス** | **CPUでは良好、Apple Siliconでは非常に優れている**。ハードウェアに大きく依存するが、効率性のために高度に最適化されている。 | **良い**。ローカルでの使用には堅実なパフォーマンスを提供。 | **非常に優れている**。複数の同時リクエストに対して、GPUでの最大スループットと効率性を実現するように設計されている。 |
