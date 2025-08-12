@@ -3,7 +3,7 @@ When comparing vLLM and Ollama, the main appeal of llama.cpp lies in its excepti
 
 llama.cpp is specifically engineered to run on the CPU alone, without needing a dedicated GPU or special drivers. This gives it a high degree of compatibility, allowing it to run not only on major operating systems like macOS, Windows, and Linux but also on smaller devices such as the Raspberry Pi. While vLLM is primarily dependent on NVIDIA GPUs, llama.cpp is optimized to run efficiently on Apple Silicon (M1/M2/M3/M4), which is my case, and standard CPUs, making it accessible to a much wider audience.
 
-# LLM Runtime Comparison: llama.cpp vs Ollama vs vLLM
+# llama.cpp vs Ollama vs vLLM
 
 | | **llama.cpp** | **Ollama** | **vLLM** |
 | :--- | :--- | :--- | :--- |
