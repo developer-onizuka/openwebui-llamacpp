@@ -112,8 +112,8 @@ svc-open-webui-llama-cpp-python   LoadBalancer   10.110.39.204   192.168.33.2   
 ```
 
 ### 2-5. Access to the External IP with some Browsers
-<img src="https://github.com/developer-onizuka/openwebui-llamacpp/blob/main/access-openwebui.png" width="720">
+<img src="https://github.com/developer-onizuka/openwebui-llamacpp/blob/main/access-openwebui.png" width="800">
 
 You can use these kinds of gguf model so easily through llama.cpp python framework.<br>
 
-<img src="https://github.com/developer-onizuka/openwebui-llamacpp/blob/main/Llama-3.2-1B-Instruct-Q4_K_M.png" width="720">
+<img src="https://github.com/developer-onizuka/openwebui-llamacpp/blob/main/Llama-3.2-1B-Instruct-Q4_K_M.png" width="800">
