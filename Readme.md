@@ -73,6 +73,7 @@ curl http://localhost:8000/v1/chat/completions \
   }'
 ```
 <br>
+
 # 2. Run gguf model with Kubernetes
 
 ### 2-1. Create PVC and PV
