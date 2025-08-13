@@ -38,7 +38,6 @@ The primary appeal of **llama.cpp** is its **portability and hardware flexibilit
 
 
 # 1. Run gguf model with Docker
-<br>
 
 ### 1-1. Building Docker image
 ```
@@ -73,8 +72,8 @@ curl http://localhost:8000/v1/chat/completions \
     "max_tokens": 128
   }'
 ```
-# 2. Run gguf model with Kubernetes
 <br>
+# 2. Run gguf model with Kubernetes
 
 ### 2-1. Create PVC and PV
 ```
