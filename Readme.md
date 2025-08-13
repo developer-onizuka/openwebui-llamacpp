@@ -3,6 +3,15 @@ When comparing vLLM and Ollama, the main appeal of llama.cpp lies in its excepti
 
 llama.cpp is specifically engineered to run on the CPU alone, without needing a dedicated GPU or special drivers. This gives it a high degree of compatibility, allowing it to run not only on major operating systems like macOS, Windows, and Linux but also on smaller devices such as the Raspberry Pi. While vLLM is primarily dependent on NVIDIA GPUs, llama.cpp is optimized to run efficiently on Apple Silicon (M1/M2/M3/M4), which is my case, and standard CPUs, making it accessible to a much wider audience.
 
+### In-Depth Breakdown
+
+#### llama.cpp
+The primary appeal of **llama.cpp** is its **portability and hardware flexibility**. It was designed to run on a wide variety of devices without the complex setup of Python or GPUs. A key strength is its efficiency on Apple Silicon and general-purpose CPUs. Its custom model format, GGUF, simplifies quantization (a technique to reduce model size) and improves memory efficiency.
+
+#### Ollama
+**Ollama** builds on the technology of llama.cpp to create a significantly
+
+
 # llama.cpp vs Ollama vs vLLM
 
 | | **llama.cpp** | **Ollama** | **vLLM** |
@@ -26,17 +35,9 @@ llama.cpp is specifically engineered to run on the CPU alone, without needing a 
 | **主な強み** | **移植性とハードウェアの柔軟性**。専用のGPUがなくても、事実上あらゆる最新のコンピュータで実行できる。 | **シンプルさ**。ローカルでモデルを実行する複雑さを抽象化し、初心者にとって優れた入口となる。 | **速度と拡張性**。強力なGPU上で大量の推論を行うための最速の選択肢。本番環境に最適。 |
 
 
----
-
-### In-Depth Breakdown
-
-#### llama.cpp
-The primary appeal of **llama.cpp** is its **portability and hardware flexibility**. It was designed to run on a wide variety of devices without the complex setup of Python or GPUs. A key strength is its efficiency on Apple Silicon and general-purpose CPUs. Its custom model format, GGUF, simplifies quantization (a technique to reduce model size) and improves memory efficiency.
-
-#### Ollama
-**Ollama** builds on the technology of llama.cpp to create a significantly
-
 # 1. Run gguf model with Docker
+<br>
+
 # 1-1. Building Docker image
 ```
 docker build -t llama-cpp-python:arm64 .
@@ -71,6 +72,7 @@ curl http://localhost:8000/v1/chat/completions \
   }'
 ```
 # 2. Run gguf model with Kubernetes
+<br>
 
 # 2-1. Create PVC and PV
 ```
